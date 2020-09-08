@@ -7,14 +7,14 @@ url = "http://#{username}:#{key}@hub-cloud.browserstack.com/wd/hub"
 
 #Input Capabilities
 caps = Selenium::WebDriver::Remote::Capabilities.new
-caps["os"] = "Windows"
-caps["os_version"] = "10"
-caps["browser"] = "Chrome"
-caps["browser_version"] = "81"
+caps["os"] = "OS X"
+caps["os_version"] = "Catalina"
+caps["browser"] = "Safari"
+caps["browser_version"] = "13.1"
 caps["resolution"] = "1920x1080"
 caps["build"] = ENV['BROWSERSTACK_BUILD_NAME']
 caps["project"] = ENV['BROWSERSTACK_PROJECT_NAME']
-caps["name"] = "myapp test 2"
+caps["name"] = "myapp test 3"
 caps["browserstack.local"] = "true"
 caps["browserstack.localIdentifier"] = ENV['BROWSERSTACK_LOCAL_IDENTIFIER']
 caps["browserstack.debug"] = "true"
